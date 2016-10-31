@@ -1,0 +1,61 @@
+body {
+	width: 100%;
+	font-family: sans-serif;
+}
+
+h2{
+	font-size: 1.5em;
+	font-weight: bold;
+}
+.expected {
+	display: inline-block;
+	vertical-align: top;
+	flex: 1;
+	padding:10px;
+}
+
+.yours {
+	display: inline-block;
+	vertical-align: top;
+	flex: 1;
+	padding: 10px;
+}
+
+.everything {
+	width: 70%;
+	margin: auto;
+	padding: 20px;
+	background-color: rgba(100, 100, 100, .3)
+
+}
+
+.test {
+	margin-bottom: 20px;
+}
+
+h2.passed {
+	color: green;
+}
+
+div.passed {
+	background-color: rgba(0,255,0,0.3);
+}
+
+h2.failed {
+	color: red;
+}
+
+div.failed {
+	background-color: rgba(255,0,0,0.3);
+}
+
+.comparison {
+	display: flex;
+}
+
+.code {
+	background-color: black;
+	font-family: monospace;
+	color:rgb(200,200,200);
+
+}

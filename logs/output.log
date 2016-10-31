@@ -1,0 +1,4 @@
+# Logfile created on 2016-10-23 14:44:25 -0400 by logger.rb/41954
+D, [2016-10-23T14:48:46.184926 #2028] DEBUG -- : entered get for index
+D, [2016-10-23T19:16:27.046888 #379] DEBUG -- : entered get for index
+D, [2016-10-23T19:17:18.274053 #396] DEBUG -- : entered get for index

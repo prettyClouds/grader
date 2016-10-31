@@ -1,0 +1,26 @@
+!!!
+%head
+	%title="uploads"
+	%link{:rel => "stylesheet", :type => "text/css", :href => "/css/reset.css "}
+	%link{:rel => "stylesheet", :type => "text/css", :href => "/css/results.css "}
+
+%div{:class => "everything"}
+	- results.each do |result|
+		%div{:class => ["test", ("passed" if result["pass"]), ("failed" unless result["pass"])]}
+			- if result["pass"] == true
+				%h2{:class => "passed"}= "Passed"
+			- else
+				%h2{:class => "failed"}= "Failed"
+			%div{:class => "comparison"}
+				%div{:class => "expected"}
+					%div="Expected"
+					%div{:class => "code"}
+						- result["expected"].each do |line|
+							%span= line
+							%br
+				%div{:class => "yours"}
+					%div="Actual"
+					%div{:class => "code"}
+						- result["actual"].each do |line|
+							%span= line
+							%br
