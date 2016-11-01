@@ -1,3 +1,4 @@
 cpp_test/
 java_test/
-
+*.out
+uploads/*
